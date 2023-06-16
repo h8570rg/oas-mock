@@ -1,0 +1,115 @@
+{
+  "oas": {
+    "openapi": "3.0.2",
+    "info": {
+      "title": "RESTful Administration API Server for Viron",
+      "version": "mock",
+      "x-pages": [
+        {
+          "id": "page01",
+          "title": "Page One",
+          "group": "sample",
+          "contents": [
+            {
+              "type": "number",
+              "title": "My First Number Content",
+              "operationId": "getDAU"
+            }
+          ]
+        },
+        {
+          "id": "page02",
+          "title": "Page Two",
+          "group": "sample",
+          "contents": [
+            {
+              "type": "table",
+              "title": "My First Table Content",
+              "operationId": "getUsers"
+            }
+          ]
+        }
+      ],
+      "x-number": {
+        "responseKey": "value"
+      },
+      "x-table": {
+        "responseListKey": "list"
+      }
+    },
+    "paths": {
+      "/dau": {
+        "get": {
+          "operationId": "getDAU",
+          "responses": {
+            "200": {
+              "description": "Daily Active User",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/users": {
+        "get": {
+          "operationId": "getUsers",
+          "responses": {
+            "200": {
+              "description": "User List",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "list": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "authentication": {
+    "list": [],
+    "oas": {
+      "openapi": "3.0.2",
+      "info": {
+        "title": "authentication",
+        "version": "mock",
+        "x-pages": []
+      },
+      "paths": {}
+    }
+  },
+
+  "dau": {
+    "value": 12345
+  }
+}
