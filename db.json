@@ -8,7 +8,7 @@
         {
           "id": "page01",
           "title": "Page One",
-          "group": "sample",
+          "group": "Group 1",
           "contents": [
             {
               "type": "number",
@@ -20,7 +20,19 @@
         {
           "id": "page02",
           "title": "Page Two",
-          "group": "sample",
+          "group": "Group 1",
+          "contents": [
+            {
+              "type": "table",
+              "title": "My First Table Content",
+              "operationId": "getUsers"
+            }
+          ]
+        },
+        {
+          "id": "page03",
+          "title": "Page Three",
+          "group": "Group 2",
           "contents": [
             {
               "type": "table",
@@ -95,7 +107,6 @@
       }
     }
   },
-
   "authentication": {
     "list": [],
     "oas": {
@@ -108,8 +119,23 @@
       "paths": {}
     }
   },
-
   "dau": {
     "value": 12345
+  },
+  "users": {
+    "list": [
+      {
+        "id": "001",
+        "name": "Cool Name"
+      },
+      {
+        "id": "002",
+        "name": "Cute Name"
+      },
+      {
+        "id": "003",
+        "name": "Fancy Name"
+      }
+    ]
   }
 }
