@@ -6,10 +6,15 @@
       "version": "mock",
       "x-pages": [
         {
-          "id": "page01",
-          "title": "Page One",
+          "id": "group-1-page-1",
+          "title": "Apple",
           "group": "Group 1",
           "contents": [
+            {
+              "type": "table",
+              "title": "My First Table Content",
+              "operationId": "getUsers"
+            },
             {
               "type": "number",
               "title": "My First Number Content",
@@ -18,8 +23,8 @@
           ]
         },
         {
-          "id": "page02",
-          "title": "Page Two",
+          "id": "group-1-page-2",
+          "title": "Banana",
           "group": "Group 1",
           "contents": [
             {
@@ -30,9 +35,73 @@
           ]
         },
         {
-          "id": "page03",
-          "title": "Page Three",
+          "id": "group-2-page-1",
+          "title": "Cherry",
           "group": "Group 2",
+          "contents": [
+            {
+              "type": "table",
+              "title": "My First Table Content",
+              "operationId": "getUsers"
+            }
+          ]
+        },
+        {
+          "id": "group-2-1-page-1",
+          "title": "Strawberry",
+          "group": "Group 2/Group 2-1",
+          "contents": [
+            {
+              "type": "number",
+              "title": "My First Number Content",
+              "operationId": "getDAU"
+            }
+          ]
+        },
+        {
+          "id": "group-2-1-page-2",
+          "title": "Pineapple",
+          "group": "Group 2/Group 2-1",
+          "contents": [
+            {
+              "type": "table",
+              "title": "My First Table Content",
+              "operationId": "getUsers"
+            }
+          ]
+        },
+        {
+          "id": "page-1",
+          "title": "Kiwi",
+          "contents": [
+            {
+              "type": "table",
+              "title": "My First Table Content",
+              "operationId": "getUsers"
+            },
+            {
+              "type": "number",
+              "title": "My First Number Content",
+              "operationId": "getDAU"
+            }
+          ]
+        },
+        {
+          "id": "group-2-1-1-page-1",
+          "title": "Avocado",
+          "group": "Group 2/Group 2-1/Group 2-1-1",
+          "contents": [
+            {
+              "type": "table",
+              "title": "My First Table Content",
+              "operationId": "getUsers"
+            }
+          ]
+        },
+        {
+          "id": "group-2-1-1-1-1-page-1",
+          "title": "Orange",
+          "group": "Group 2/Group 2-1/Group 2-1-1/Group 2-1-1-1/Group 2-1-1-1-1",
           "contents": [
             {
               "type": "table",
