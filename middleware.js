@@ -6,7 +6,10 @@ module.exports = (req, res, next) => {
   }
   res.header("access-control-allow-credentials", "true");
   res.header("x-viron-authtypes-path", "/authentication");
-  res.header("access-control-expose-headers", "x-viron-authtypes-path");
+  res.header(
+    "access-control-expose-headers",
+    "x-viron-authtypes-path, content-type, content-disposition"
+  );
   // /downloadに対しては, content-typeとcontent-dispositionを付与する
   if (req.path === "/download") {
     res.header("content-type", "text/csv");
