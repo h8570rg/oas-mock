@@ -13,7 +13,17 @@
             {
               "type": "table",
               "title": "My First Table Content",
-              "operationId": "getUsers"
+              "operationId": "getUsers",
+              "actions": [
+                {
+                  "operationId": "download",
+                  "defaultParametersValue": {
+                    "resourceName": "users",
+                    "format": "csv"
+                  }
+                }
+              ],
+              "resourceId": "users"
             },
             {
               "type": "number",
@@ -173,6 +183,24 @@
             }
           }
         }
+      },
+      "/download": {
+        "get": {
+          "description": "csv形式でダウンロードします。",
+          "operationId": "download",
+          "responses": {
+            "200": {
+              "content": {
+                "text/csv": {
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "description": "OK"
+            }
+          }
+        }
       }
     }
   },
@@ -206,5 +234,8 @@
         "name": "Fancy Name"
       }
     ]
+  },
+  "download": {
+    "csv": "id,name\n001,Cool Name\n002,Cute Name\n003,Fancy Name\n"
   }
 }
