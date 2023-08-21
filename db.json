@@ -126,7 +126,8 @@
       },
       "x-table": {
         "responseListKey": "list"
-      }
+      },
+      "x-thumbnail": "https://picsum.photos/id/237/300/300"
     },
     "paths": {
       "/dau": {
