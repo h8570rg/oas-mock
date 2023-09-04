@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "json-server --watch db.json --middlewares middleware.js -p 8001"
+    "dev": "json-server --watch db.json --middlewares middleware.js -p 8001",
+    "dev2": "json-server --watch db.json --middlewares middleware.js -p 8002"
   },
   "keywords": [],
   "author": "",
