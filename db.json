@@ -3,7 +3,20 @@
     "openapi": "3.0.2",
     "info": {
       "title": "RESTful Administration API Server for Viron",
+      "description": "# foo",
       "version": "mock",
+      "termsOfService": "https://sample.com/path/to/termsOfService",
+      "contact": {
+        "name": "API Support",
+        "url": "https://sample.com/path/to/contact",
+        "email": "contact@sample.com"
+      },
+      "license": {
+        "name": "License",
+        "url": "https://sample.com/path/to/license"
+      },
+      "x-theme": "blue",
+      "x-tags": ["production", "QA"],
       "x-pages": [
         {
           "id": "group-1-page-1",
@@ -122,12 +135,12 @@
         }
       ],
       "x-number": {
-        "responseKey": "value"
+        "responseKey": "value2"
       },
       "x-table": {
-        "responseListKey": "list"
+        "responseListKey": "list2"
       },
-      "x-thumbnail": "https://picsum.photos/id/237/300/300"
+      "x-thumbnail": "https://picsum.photos/id/232/300/300"
     },
     "paths": {
       "/dau": {
@@ -163,7 +176,7 @@
                   "schema": {
                     "type": "object",
                     "properties": {
-                      "list": {
+                      "list2": {
                         "type": "array",
                         "items": {
                           "type": "object",
@@ -173,6 +186,63 @@
                             },
                             "name": {
                               "type": "string"
+                            },
+                            "nnnnnn": {
+                              "type": "number"
+                            },
+                            "iiiiii": {
+                              "type": "integer"
+                            },
+                            "url": {
+                              "type": "string",
+                              "format": "uri"
+                            },
+                            "image": {
+                              "type": "string",
+                              "format": "uri-image"
+                            },
+                            "arr": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "booooooo": {
+                              "type": "boolean"
+                            },
+                            "objecttt": {
+                              "type": "object",
+                              "properties": {
+                                "nnnnnn": {
+                                  "type": "number"
+                                },
+                                "iiiiii": {
+                                  "type": "integer"
+                                },
+                                "id": {
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string",
+                                  "format": "uri"
+                                },
+                                "image": {
+                                  "type": "string",
+                                  "format": "uri-image"
+                                },
+                                "arr": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                "booooooo": {
+                                  "type": "boolean"
+                                }
+                              }
                             }
                           }
                         }
@@ -218,21 +288,49 @@
     }
   },
   "dau": {
-    "value": 12345
+    "value2": 12345
   },
   "users": {
-    "list": [
+    "list2": [
       {
         "id": "001",
-        "name": "Cool Name"
+        "name": "Cool Name",
+        "nnnnnn": 1234567890,
+        "iiiiii": 1234567890,
+        "url": "https://picsum.photos/id/232/300/300",
+        "image": "https://picsum.photos/id/232/300/300",
+        "arr": ["a", "b", "c"],
+        "booooooo": true,
+        "objecttt": {
+          "id": "001",
+          "name": "Cool Name",
+          "url": "https://picsum.photos/id/232/300/300",
+          "image": "https://picsum.photos/id/232/300/300",
+          "arr": ["a", "b", "c"],
+          "booooooo": true
+        }
       },
       {
         "id": "002",
-        "name": "Cute Name"
+        "name": "Cute Name",
+        "url": "https://picsum.photos/id/232/300/300",
+        "image": "https://picsum.photos/id/232/300/300",
+        "arr": ["a", "b", "c"],
+        "booooooo": true,
+        "objecttt": {
+          "id": "001",
+          "name": "Cool Name",
+          "url": "https://picsum.photos/id/232/300/300",
+          "image": "https://picsum.photos/id/232/300/300",
+          "arr": ["a", "b", "c"],
+          "booooooo": true
+        }
       },
       {
         "id": "003",
-        "name": "Fancy Name"
+        "name": "Fancy Name",
+        "url": "https://picsum.photos/id/232/300/300",
+        "image": "https://picsum.photos/id/232/300/300"
       }
     ]
   },
